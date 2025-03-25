@@ -3,48 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfólio - Segurança da Informação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: url('./images/JER_2042.JPG') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        .hero-text {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Seu Nome</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Vídeos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Uma breve descrição sobre você e sua trajetória.</p>
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <div class="hero-text">
+                <h1>João Filho</h1>
+                <p>Profissional de Segurança da Informação | GRC | Cibersegurança</p>
+            </div>
+        </div>
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Git e GitHub</li>
-            <li>Segurança Cibernética e GRC</li>
-        </ul>
+    <section id="sobre" class="container py-5">
+        <h2 class="text-center">Sobre Mim</h2>
+        <p class="text-center">📌 Já imaginou o impacto de uma falha de segurança nos dados de uma empresa? Meu objetivo é garantir que isso não aconteça. Com uma paixão genuína por cibersegurança, conformidade regulatória e defesa contra ameaças digitais, minha missão é transformar desafios em soluções eficazes.
+            Sou recém-graduado em Segurança da Informação, com sólida formação em análise forense, redes, criptografia e LGPD.
+        </p>
+        <p>
+            💡 O que me motiva?
+            A constante evolução da cibersegurança e o impacto real que posso causar na proteção de dados e mitigação de ameaças.
+        </p>
     </section>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <p>Lista dos seus projetos com links para os repositórios.</p>
+    <section id="habilidades" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Habilidades</h2>
+            <div class="row text-center">
+                <div class="col-md-3">🔹 Segurança Cibernética</div>
+                <div class="col-md-3">🔹 GRC</div>
+                <div class="col-md-3">🔹 Análise de Riscos</div>
+                <div class="col-md-3">🔹 Auditoria de Segurança</div>
+                <div class="col-md-3">🔹 Criptografia</div>
+                <div class="col-md-3">🔹 Desenvolvimento de aplicações</div>
+                <div class="col-md-3">🔹 Criptografia</div>
+                <div class="col-md-3">🔹 Desenvolvimento de aplicações</div>
+            </div>
+        </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Redes sociais e e-mail.</p>
+    <section id="projetos" class="container py-5">
+        <h2 class="text-center">Projetos e Apresentações Publicadas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto: CryPT2tex Link</h5>
+                        <p class="card-text">É uma plataforma segura para comunicação e compartilhamento de arquivos, utilizando criptografia de ponta a ponta e protocolos seguros de rede.</p>
+                        <a href="#" class="btn btn-dark">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto: Sentinel X</h5>
+                        <p class="card-text">É uma ferramenta inovadora baseada em inteligência artificial para detecção e resposta automatizada a ameaças cibernéticas.</p>
+                        <a href="#" class="btn btn-dark">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabalho: Desafios e oportunidades: proposta de implementação da LGPD nas pequenas e médias empresas do comércio de Itapajé</h5>
+                        <a href="http://repositorio.ufc.br/handle/riufc/78718" class="btn btn-dark" target="_blank">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 Seu Nome</p>
+    <section id="videos" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Vídeos</h2>
+            <p>Confira meus vídeos sobre segurança da informação.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/shorts/lKQZKxNE75g" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contato" class="container py-5">
+        <h2 class="text-center">Contato</h2>
+        <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/jfjoaofilho" target="_blank">Meu LinkedIn</a></p>
+        <p class="text-center">E-mail: <a href="mailto:joaofilho1467@gmail.com">joaofilho1467@gmail.com</a></p>
+    </section>
+
+    <footer class="bg-dark text-center text-white py-3">
+        <p>© 2025 João Filho - Segurança da Informação</p>
     </footer>
 </body>
 </html>
